@@ -1,11 +1,11 @@
 // Write your code here
 function Book (title, author, ISBN, numCopies) {
-    this.title = title;
-    this.author = author;
-    this.ISBN = ISBN;
-    this.numCopies = numCopies;
+  this.title = title;
+  this.author = author;
+  this.ISBN = ISBN;
+  this.numCopies = numCopies;
   
-  }
+}
 
 Book.prototype.getAvailability = function() {
   if (numCopies === 0) {
