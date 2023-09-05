@@ -10,7 +10,7 @@ function Book (title, author, ISBN, numCopies) {
 Book.prototype.getAvailability = function() {
   if (numCopies === 0) {
     return "Out of Stock";
-  } else if (this.numCopies <= 10) {
+  } else if (this.numCopies < 10) {
     return "Low Stock";
   }
   return "In Stock";
