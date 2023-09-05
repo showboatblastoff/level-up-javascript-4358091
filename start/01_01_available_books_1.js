@@ -1,6 +1,5 @@
 // Write your code here
-function Book {
-  constructor(title, author, ISBN, numCopies) {
+function Book (title, author, ISBN, numCopies) {
     this.title = title;
     this.author = author;
     this.ISBN = ISBN;
