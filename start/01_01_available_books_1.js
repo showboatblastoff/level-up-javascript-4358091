@@ -22,7 +22,7 @@ Book.prototype.sell = function(numCopiesSold = 1) {
 Book.prototype.restock = function(numCopiesStocked = 5) {
   this.numCopies += numCopiesStocked;
 }
-}
+
 
 
 const BookemDanno = new Book("Bookem Danno", "Spartan Dave", "101", 20);
