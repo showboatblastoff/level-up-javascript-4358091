@@ -8,7 +8,7 @@ function Book (title, author, ISBN, numCopies) {
 }
 
 Book.prototype.getAvailability = function() {
-  if (numCopies === 0) {
+  if (this.numCopies === 0) {
     return "Out of Stock";
   } else if (this.numCopies < 10) {
     return "Low Stock";
@@ -47,8 +47,8 @@ console.log(DrumCircle.getAvailability());
 const NotSoFunkyMedina = new Book("Not So Funky Medina", "Tone Loc", "107", 10);
 console.log(NotSoFunkyMedina.getAvailability());
 
-DrumCircle.restock(12);
-console.log(DrumCircle.getAvailability());
+SnookemDanno.restock(12);
+console.log(SnookemDanno.getAvailability());
 
 NotSoFunkyMedina.sell(3);
 console.log(NotSoFunkyMedina.getAvailability());
