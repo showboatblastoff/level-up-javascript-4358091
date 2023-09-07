@@ -34,24 +34,12 @@
       }
     ];
     // Write your code here
-    const vegetarianOptions = menu.filter(menu => menu.isVegetarian);
-    [{
-      name: "Chicken parmesan",
-        isVegetarian: false
-      },
-      {
-      name: "Stuffed shells",
-        isVegetarian: true
-      },
-      {
-      name: "Spaghetti and meatballs",
-        isVegetarian: false
-      },
-      {
-        name: "Tiramisu",
-        isVegetarian: true
-      },
-    ]
+    let list = document.getElementById("menu");
+    for (i = 0; i < menu.length; ++i) {
+      var li = document.createElement("li");
+      li.innerText = menu[i];
+      list.appendChild(li);
+    }
   </script>
   <p>ello</p>
 </body>
